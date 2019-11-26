@@ -1,0 +1,25 @@
+
+<po-page-default
+  p-title="Verifique curiosidades de uma torcida num país específico.">   
+    <div class="po-row">
+      <po-input
+        name="filter"
+        class="po-md-3"
+        p-placeholder="Pesquisar nome do time ou país"
+        (p-blur)="getFilterList($event)"
+        (p-change-model)="getFilterList($event)"
+        p-icon="po-icon po-icon-search">
+      </po-input>
+      <po-radio-group
+          class="po-md-2"
+          name="filterOption"
+          p-required
+          [p-options]="filterOption"
+          (p-change)="changeOptionFilter($event)">
+      </po-radio-group>
+    </div>
+    <po-table
+      [p-columns]="columnsList"
+      [p-items]="itemsList">
+    </po-table>
+</po-page-default>
