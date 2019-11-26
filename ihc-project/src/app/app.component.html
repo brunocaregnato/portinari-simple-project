@@ -1,0 +1,30 @@
+<div class="po-wrapper">
+  <po-toolbar p-title="Torcidas do Mundo"></po-toolbar>
+
+  <po-menu [p-menus]="menus"></po-menu>
+
+  <po-page-default
+   p-title="Curiosidades sobre torcidas de futebol pelo mundo.">    
+    <po-slide
+      p-title="Verifique os mais novos vídeos das torcidas!"
+      [p-slides]="slides"
+      p-height="500">
+      <ng-template p-slide-content-template let-item>
+          <div class="sample-background-image"
+            [style.background-image]="'url(' + item.imagem + ')'"
+            [style.backgroundSize]="'cover'"
+            [style.height.%]="100">
+            <div class="po-row">
+              <div class="po-offset-lg-1 po-offset-xl-1 po-lg-5 po-sm-10 po-mt-4 po-mb-4 po-p-5"
+                [style.background]="'white'">
+                <div class="po-font-text-large-bold po-mb-3">{{item.title}}</div>
+                <po-divider></po-divider>
+                <div class="po-font-text-large po-mb-3">{{item.description}}</div>
+                <po-button p-label="Vídeo aqui!" (p-click)="onLinkClick(item.link)"></po-button>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+    </po-slide>
+  </po-page-default>
+</div>
