@@ -1,6 +1,5 @@
-
 <po-page-default
-  p-title="Verifique curiosidades de uma torcida num país específico.">   
+  p-title="Verifique curiosidades de uma torcida num país específico">   
     <div class="po-row">
       <po-input
         name="filter"
@@ -18,8 +17,23 @@
           (p-change)="changeOptionFilter($event)">
       </po-radio-group>
     </div>
-    <po-table
-      [p-columns]="columnsList"
-      [p-items]="itemsList">
-    </po-table>
+    <po-container>
+      <po-table
+        [p-columns]="columnsList"
+        [p-items]="itemsList">
+        <ng-template p-table-row-template let-rowItem let-i="rowIndex">
+          <po-widget>
+              <div class="po-row">
+                <img [src]="rowItem.image" height="200" width="400">
+                <po-info
+                  class="po-md-6"
+                  p-label="História"
+                  p-orientation="horizontal"
+                  [p-value]="rowItem.description">
+                </po-info>
+              </div>
+          </po-widget>
+        </ng-template>
+      </po-table>
+    </po-container>    
 </po-page-default>

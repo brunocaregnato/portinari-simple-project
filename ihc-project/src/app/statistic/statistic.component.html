@@ -1,0 +1,19 @@
+<po-page-default
+  p-title="Estatísticas sobre as torcidas">  
+  <div class="po-row">
+    <po-chart
+      class="po-lg-6"
+      p-height="300"
+      p-title="Top 5 Países com mais Barras Bravas Registradas"
+      [p-series]="teamsPerCountry"
+      [p-type]="teamsPerCountryChartType">
+    </po-chart>
+    <po-chart
+      class="po-lg-6"
+      p-title="Torcidas na América Latina"
+      p-height="300"
+      [p-series]="teamSupporters"
+      [p-type]="teamSupportersChartType">
+  </po-chart>
+  </div>
+</po-page-default>

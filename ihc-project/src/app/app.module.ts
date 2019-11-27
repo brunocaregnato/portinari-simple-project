@@ -8,12 +8,14 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CountryComponent } from './country/country.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StatisticComponent } from './statistic/statistic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CountryComponent
+    CountryComponent,
+    StatisticComponent
   ],
   imports: [
     BrowserModule,
