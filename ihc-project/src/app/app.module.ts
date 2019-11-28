@@ -9,13 +9,15 @@ import { HomeComponent } from './home/home.component';
 import { CountryComponent } from './country/country.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StatisticComponent } from './statistic/statistic.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CountryComponent,
-    StatisticComponent
+    StatisticComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -15,11 +15,12 @@ export class AppComponent implements OnInit{
   public readonly menus: Array<PoMenuItem> = [
     { label: 'Início', action: this.onHomeClick.bind(this) },
     { label: 'Países e Times', action: this.onCountryClick.bind(this) },
-    { label: 'Estatísticas', action: this.onStatisticClick.bind(this) }
+    { label: 'Estatísticas', action: this.onStatisticClick.bind(this) },
+    { label: 'Sobre', action: this.onAboutClick.bind(this) },
   ];
 
   ngOnInit(){
-    this.onCountryClick();
+    this.onAboutClick();
   }
 
   private onHomeClick() : void {
@@ -33,4 +34,9 @@ export class AppComponent implements OnInit{
   private onStatisticClick() : void {
     this._router.navigate(['statistic']);
   }
+
+  private onAboutClick() : void {
+    this._router.navigate(['about']);
+  }
+
 }

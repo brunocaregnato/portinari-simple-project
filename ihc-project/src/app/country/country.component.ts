@@ -145,36 +145,62 @@ export class CountryComponent implements OnInit {
         country: 'Uruguai',
         team: 'Nacional',
         supporters: 'La Banda del Parque',
-        description: '',
-        image: '/assets/river.jpg'
+        description: `Antes de ter o nome de La Banda del Parque, o fã é dividido em 
+        três grupos: o bar na cobertura localizado no anel superior da tribuna de Amsterdã 
+        do estádio do centenário, a banda do meio localizada no anel do meio e as crianças 
+        Cerrito localizado no anel abaixo. Esta divisão terminou no ano de 99 quando, 
+        sob a liderança de "Pablito", o fã se tornou uniforme, uma união que dura até os dias de hoje.`,
+        image: '/assets/nacional.jpg'
       },
       {
         country: 'Argentina',
         team: 'Racing',
         supporters: 'La Guarda Imperial',
-        description: '',
-        image: '/assets/river.jpg'
+        description: `Guarda Imperial é o nome pelo qual a barra corajosa do Racing Club é conhecida, 
+        embora essa denominação também seja atribuída a uma de suas facções particulares.
+        Como um grupo de corajosos bares A guarda imperial foi formada no final dos 
+        anos 50, mais precisamente no ano de 1958. Ao longo de sua história, atuou em várias situações 
+        de violência com bares de outros clubes. eles criaram a maior bandeira do mundo Nos anos 2000, 
+        houve muitas brigas internas por causa de quem estava no comando, desde que os líderes até 
+        então estavam presos pelo assassinato do fã do Independente.`,
+        image: '/assets/racing.jpg'
       },
       {
         country: 'Argentina',
         team: 'Indepiendente',
         supporters: 'La Banda del Rojo',
-        description: '',
-        image: '/assets/river.jpg'
+        description: `A barra vermelha é o nome da barra corajosa do Independent Athletic Club. 
+        É considerado um dos maiores e mais fortes bares corajosos da Argentina (atualmente ao 
+          lado dos Oldell's New Boys, Boca Juniors e River Plate) e do mundo. Há informações 
+          sobre a existência desse grupo desde os anos 50. Além de estar nas partidas do Independent, 
+          desde 1982 o núcleo do Red Devils vai para os jogos que a Argentina joga nas Copas do Mundo
+           e também foi para a Copa. America 2007 jogou na Venezuela.`,
+        image: '/assets/indepiendente.jpg'
       },
       {
         country: 'Argentina',
         team: 'San Lorenzo',
         supporters: 'La Gloriosa Butteler',
-        description: '',
-        image: '/assets/river.jpg'
+        description: `Este é o cronograma da história do corajoso bar San Lorenzo, La Gloriosa Butteler:
+        1927: a barra de borracha é formada;
+        1946: O fã faz parte da obtenção do título e invade o campo de jogo (tornado inédito na época);
+        1959: Pela primeira vez, um torcedor do futebol argentino está atrás do arco.
+        1968: Mais de 500 fãs entregaram o carro ao presidente do clube para impedir a venda do Fischer Wolf ao River;
+        1970: A revista gráfica tinha uma seção chamada "canções" dedicada às músicas do ciclone;
+        E muito mais.`,
+        image: '/assets/san_lorenzo.jpg'
       },
       {
         country: 'Colômbia',
         team: 'América de Cali',
         supporters: 'Baron Rojo Sur',
-        description: '',
-        image: '/assets/river.jpg'
+        description: `Este plano continua com excelentes resultados. Hoje, a barra 
+        BRS (por sua sigla) constitui o maior grupo de torcedores do país, 
+        pois possui filiais em todas as cidades onde é disputado o torneio profissional 
+        colombiano, além de grupos em Nova York e Miami. Da mesma forma, eles são reconhecidos 
+        como o bar mais itinerante do país, sendo os primeiros a cruzar as fronteiras para incentivar 
+        a América à Venezuela, Equador, Peru e Argentina.`,
+        image: '/assets/america_cali.jpg'
       },      
     ];
   }
