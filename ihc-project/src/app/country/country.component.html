@@ -7,6 +7,7 @@
         p-placeholder="Pesquisar nome do time ou país"
         (p-blur)="getFilterList($event)"
         (p-change-model)="getFilterList($event)"
+        [p-disabled]="!hasSelectedFilterType"
         p-icon="po-icon po-icon-search">
       </po-input>
       <po-radio-group

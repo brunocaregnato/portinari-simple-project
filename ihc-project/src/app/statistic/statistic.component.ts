@@ -13,11 +13,11 @@ export class StatisticComponent implements OnInit {
   }
 
   public teamsPerCountry: Array<PoDonutChartSeries> = [    
-    { category: 'Brasil', value: 3, tooltip: 'Brasil' },
     { category: 'Argentina', value: 6, tooltip: 'Argentina' },
+    { category: 'Brasil', value: 3, tooltip: 'Brasil' },
     { category: 'Colômbia', value: 2, tooltip: 'Colômbia' },
-    { category: 'Paraguai', value: 1, tooltip: 'Paraguai' },
-    { category: 'Uruguai', value: 2, tooltip: 'Uruguai' }    
+    { category: 'Uruguai', value: 2, tooltip: 'Uruguai' },    
+    { category: 'Paraguai', value: 1, tooltip: 'Paraguai' }
   ];
   
   public teamsPerCountryChartType: PoChartType = PoChartType.Donut;

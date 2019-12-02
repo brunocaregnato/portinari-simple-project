@@ -23,6 +23,7 @@ export class CountryComponent implements OnInit {
 
   public itemsList: Array<any> = [];
   public optionFilter: string;
+  public hasSelectedFilterType: boolean = false;
 
   private getItems() {
     return [
@@ -206,7 +207,7 @@ export class CountryComponent implements OnInit {
   }
 
   ngOnInit() {   
-    this.optionFilter = 'Time';
+    this.hasSelectedFilterType = false;
     this.itemsList = this.getItems().sort(); 
   }
 
@@ -215,6 +216,7 @@ export class CountryComponent implements OnInit {
   }
 
   public changeOptionFilter(value: string){
+    this.hasSelectedFilterType = true;
     this.optionFilter = value;
   }
 }
