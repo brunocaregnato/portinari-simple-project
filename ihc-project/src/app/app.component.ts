@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
   ];
 
   ngOnInit(){
-    this.onAboutClick();
+    this.onHomeClick();
   }
 
   private onHomeClick() : void {

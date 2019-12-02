@@ -8,8 +8,6 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
-  public onlyJoking: number = 0;
-
   ngOnInit() {
 
   }
